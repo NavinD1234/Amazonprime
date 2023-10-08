@@ -20,7 +20,7 @@ const RegisterAndLogin = () => {
     e.preventDefault();
 
     try {
-      const projectId = "24ivifnsynsd"; // Replace with your actual project ID
+      const projectId = "24ivifnsynsd"; // project ID
 
       // Step 1: Register the user
       const registrationResponse = await axios.post(

@@ -62,7 +62,7 @@ function ListItem(props) {
           >
             <img
               style={{ height: "100%", width: "100%" }}
-              src={backimg}
+              src={props.poster}
               alt="background color for now."
             ></img>
           </div>

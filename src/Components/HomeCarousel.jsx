@@ -6,13 +6,10 @@ import NavUl from "./NavUl";
 import LeftArrowButton from "./LeftArrowButton";
 import RightArrowButton from "./RightArrowButton";
 
-
 function HomeCarousel() {
   const [leftVisibility, setLeftVisibility] = useState(false);
   const [rightVisibility, setRightVisibility] = useState(false);
 
-
-  
   function ObserveFirstChild(event) {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -96,6 +93,7 @@ function HomeCarousel() {
             }}
           >
             {HomeTileData.map((listitem) => {
+              console.log("listitem>>", listitem);
               return (
                 <HomeTile
                   key={listitem.id}

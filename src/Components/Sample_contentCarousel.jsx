@@ -13,8 +13,8 @@ function ContentCarousel() {
       <div style={{ marginLeft: 72, marginRight: 72, paddingBottom: 16 }}>
         Movies List
       </div>
-      <div>
-        <div style={{ display: "flex", overflow: "hidden" }}>
+    <div>
+      <div style={{ display: "flex", overflow: "hidden" }}>
           <button
             onClick={() => {
               document.getElementById("container").scrollLeft -= 1400;
@@ -28,10 +28,12 @@ function ContentCarousel() {
             left
           </button>
           <ul id="container" style={{ zIndex: 2 }}>
+   </ul>
           import React from "react";
 import ReactDOM from "react-dom/client";
 import ContentTile from "./ContentTile";
 import ContentTileData from "./ContentTileData";
+
 
 function abc(data) {
   return <ContentTile poster={data.poster} />;
